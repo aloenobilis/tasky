@@ -1,1 +1,2 @@
 s4l49 - the timertray subclass (git)
+S4L50 - finishing timertray refactor ()
