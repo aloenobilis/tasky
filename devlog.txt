@@ -1,2 +1,3 @@
 s4l49 - the timertray subclass (git)
-S4L50 - finishing timertray refactor ()
+S4L50 - finishing timertray refactor (git)
+s4l51 - setting tooltips () 
