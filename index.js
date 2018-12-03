@@ -1,7 +1,7 @@
 const path = require('path'); 
 const electron = require('electron'); 
 const { app, BrowserWindow, Tray } = electron; 
-
+const TimerTray = require('./app/timer_tray.js');                                                  // S4L49
  
 let mainWindow;                                                                                    // S4L38
 let tray;                                                                                          // S4L41 
@@ -20,7 +20,7 @@ app.on('ready', () => {
     const iconName = process.platform === 'win32' ? 'windows-icon.png' : 'iconTemplate.png';        // S4L40 -  Depending on whether our app is running on Windows or OSX we'll want to use their respetive icons
     const iconPath = path.join(__dirname, `./src/assets/${iconName}`); 
 
-    tray = new Tray(iconPath);                                                                      // The Tray constructor requires a path for the icon to be dispayed on the status bar 
+    tray = new TimerTray(iconPath);                                                                      // The Tray constructor requires a path for the icon to be dispayed on the status bar 
 
     tray.on('click', (event, bounds) => {                                                           // S4L41 -  because the window show is false by default we'll want to show th window on click of the icon                                         
         const {x, y} = bounds;                                                                      // S4L44 - Click event bounds, x,y are for the the postion of the window on the screen
