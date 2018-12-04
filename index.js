@@ -16,6 +16,9 @@ app.on('ready', () => {
         show: false,                   // S4L41 if false the window won't show 
     });
     mainWindow.loadURL(`file://${__dirname}/src/index.html`); 
+    mainWindow.on('blur', () => {                                                                   // s4l54 - whenever the user click away from the main window, i.e blur, then we hide the window 
+        mainWindow.hide(); 
+    }); 
 
     const iconName = process.platform === 'win32' ? 'windows-icon.png' : 'iconTemplate.png';        // S4L40 -  Depending on whether our app is running on Windows or OSX we'll want to use their respetive icons
     const iconPath = path.join(__dirname, `./src/assets/${iconName}`); 
