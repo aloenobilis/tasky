@@ -6,3 +6,7 @@ s4l53 - building context menus (git)
 s4l54 - controlling window focus (git)
 s4l55 - hiding dock icons (git)
 s4l56 - main window class (git)
+s4l57 - ipc between react and electron (null)
+s4l58 - displaying text on the tray (git)
+: we'll watch the react side to update the time then use ipc to update electron about the time to display in
+the task bar. ipcRenderer will emit an event which ipcMain will listen for. 
