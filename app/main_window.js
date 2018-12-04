@@ -8,9 +8,10 @@ class MainWindow extends BrowserWindow {
             // S4L39 
             height: 500,   
             width: 300, 
-            frame: false,                  // false means no title bar for the window 
-            resizable: false,              // false inidicates that the user cannot resize the window 
-            show: false,                   // S4L41 if false the window won't show 
+            frame: false,                                       // false means no title bar for the window 
+            resizable: false,                                   // false inidicates that the user cannot resize the window 
+            show: false,                                        // S4L41 if false the window won't show 
+            webPreferences: {backgroundThrottling: false },     // s4l59 turns off chromiums background throttling when window not in focus 
         });
 
         this.loadURL(url);                                                                            // S4L56

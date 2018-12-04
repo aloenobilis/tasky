@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default () => {
   return (
-    <nav>
+    <nav className="grey darken-4">
       <div className="nav-wrapper">
         <Link
           to="/settings"
