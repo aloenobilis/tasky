@@ -7,6 +7,7 @@ let mainWindow;                                                                 
 let tray;                                                                                          // S4L51
 
 app.on('ready', () => {
+    app.dock.hide();                                                                               // S4L55
     mainWindow = new BrowserWindow({
         // S4L39 
         height: 500,   
