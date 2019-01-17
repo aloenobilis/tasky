@@ -13,7 +13,7 @@ const APP_DATA = JSON.parse(localStorage.getItem("__INITIAL_STATE__"));
 const INITIAL_STATE = {
   tasks: [
     { id: 1, task: "Develop", totalTime: 10 },
-    { id: 2, task: "Build Website", totalTime: 60 },
+    { id: 2, task: "Build", totalTime: 60 },
     { id: 3, task: "Deploy App", totalTime: 1000 },
     { id: 4, task: "Code Testing", totalTime: 10000 },
     { id: 5, task: "Refactor", totalTime: 100000 }
